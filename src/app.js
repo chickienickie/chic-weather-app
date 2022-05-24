@@ -35,8 +35,6 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  let tempMax = document.querySelector("#high");
-  let tempMin = document.querySelector("#low");
   let feelsLike = document.querySelector("#feelslike");
   let pressure = document.querySelector("#pressure");
   celsiusTemperature = response.data.main.temp;
@@ -46,8 +44,6 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  tempMax.innerHTML = `High: ${Math.round(response.data.main.temp_max)}°C |`;
-  tempMin.innerHTML = `Low: ${Math.round(response.data.main.temp_min)}°C`;
   feelsLike.innerHTML = ` ${Math.round(response.data.main.feels_like)}°C`;
   pressure.innerHTML = response.data.main.pressure;
   iconElement.setAttribute(

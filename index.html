@@ -29,112 +29,105 @@
           <button class="currentLocationButton" id="current-location-button">Get Current Location <i
               class="fa-solid fa-location-pin"></i>
           </button>
-
         </form>
-        <div class="overview">
-          <h1 id="city"></h1>
-          <h2 id="temperature"></h2><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a></span>
-          <p id="description"></p>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix weather-temperature">
-              <img src="" alt="Clear" id="icon" class="float-right" />
-            </div>
-            <h3> <span id="high"> High: 73 | </span> <span id="low"> Low: 40</span></h3>
-            <br />
-            <!-- Current Weather Conditions -->
+        <!-- Current Weather -->
+        <h1 id="city"></h1>
+        <h2 id="temperature"></h2><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a></span>
+        <p id="description"></p>
+        <img src="" alt="Clear" id="icon" class="float-right" />
+        <br />
+        <!-- Current Weather Conditions -->
 
-            <hr id="hr-bottom">
+        <hr id="hr-bottom">
 
-            <div class="row" id="weather-condition">
-              <div class="col-md-2 col-md-offset-1">
-                <h6><i class="wi wi-cloud"></i></h6>
-                <p id="description">Sunny</p>
-              </div>
-              <div class="col-md-2">
-                <h6><i class="wi wi-humidity"></i></h6>
-                <p id="humidity">10%</p>
-              </div>
-              <div class="col-md-2">
-                <h6><i class="wi wi-strong-wind"></i></h6>
-                <p id="wind">windy 20 NE</p>
-              </div>
-              <div class="col-md-2">
-                <h6><i class="wi wi-thermometer"></i></h6>
-                <p id="feelslike">feels like</p>
-              </div>
-              <div class="col-md-2">
-                <h6><i class="wi wi-barometer"></i></h6>
-                <p id="pressure">10%</p>
-              </div>
-            </div>
-
-
-            <hr>
-            <!-- 5 day Forecast -->
-            <h4>5 Day Forecast</h4>
-            <div class="forecast">
-              <div class="row">
-
-                <div class="col-md-2 col-md-offset-1">
-                  <h5 class="weekday">Friday</h5>
-                  <h5><i class="wi wi-day-sunny"></i></h5>
-                  <p class="weekday-temp"><strong>66°</strong>|38°</p>
-                </div>
-
-
-
-                <div class="col-md-2">
-                  <h5 class="weekday">Saturday</h5>
-                  <h5><i class="wi wi-showers"></i></h5>
-                  <p class="weekday-temp"><strong>57°</strong>|38°</p>
-                </div>
-
-
-
-                <div class="col-md-2">
-                  <h5 class="weekday">Sunday</h5>
-                  <h5><i class="wi wi-day-cloudy"></i></h5>
-                  <p class="weekday-temp"><strong>47°</strong>|32°</p>
-                </div>
-
-
-
-                <div class="col-md-2">
-                  <h5 class="weekday">Monday</h5>
-                  <h5><i class="wi wi-showers"></i></h5>
-                  <p class="weekday-temp"><strong>45°</strong>|32°</p>
-                </div>
-
-
-                <div class="col-md-2">
-                  <h5 class="weekday">Tuesday</h5>
-                  <h5><i class="wi wi-showers"></i></h5>
-                  <p class="weekday-temp"><strong>47°</strong>|38°</p>
-                </div>
-              </div>
-
-              <hr>
-              <br />
-
-
-
-
-            </div>
+        <div class="row" id="weather-condition">
+          <div class="col-md-2 col-md-offset-1">
+            <h6><i class="wi wi-cloud"></i></h6>
+            <p id="description">Sunny</p>
+          </div>
+          <div class="col-md-2">
+            <h6><i class="wi wi-humidity"></i></h6>
+            <p id="humidity">10%</p>
+          </div>
+          <div class="col-md-2">
+            <h6><i class="wi wi-strong-wind"></i></h6>
+            <p id="wind">windy 20 NE</p>
+          </div>
+          <div class="col-md-2">
+            <h6><i class="wi wi-thermometer"></i></h6>
+            <p id="feelslike">feels like</p>
+          </div>
+          <div class="col-md-2">
+            <h6><i class="wi wi-barometer"></i></h6>
+            <p id="pressure">10%</p>
           </div>
         </div>
-        <footer>Last updated: <span id="date"></span></footer>
-        <small>
-          <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
-              class="fa-brands fa-github"></i></a>
-          by
-          Nickie Potter
-        </small>
+
+
+        <hr>
+        <!-- 5 day Forecast -->
+        <h4>5 Day Forecast</h4>
+        <div class="forecast">
+          <div class="row">
+
+            <div class="col-md-2 col-md-offset-1">
+              <h5 class="weekday">Friday</h5>
+              <h5><i class="wi wi-day-sunny"></i></h5>
+              <p class="weekday-temp"><strong>66°</strong>|38°</p>
+            </div>
+
+
+
+            <div class="col-md-2">
+              <h5 class="weekday">Saturday</h5>
+              <h5><i class="wi wi-showers"></i></h5>
+              <p class="weekday-temp"><strong>57°</strong>|38°</p>
+            </div>
+
+
+
+            <div class="col-md-2">
+              <h5 class="weekday">Sunday</h5>
+              <h5><i class="wi wi-day-cloudy"></i></h5>
+              <p class="weekday-temp"><strong>47°</strong>|32°</p>
+            </div>
+
+
+
+            <div class="col-md-2">
+              <h5 class="weekday">Monday</h5>
+              <h5><i class="wi wi-showers"></i></h5>
+              <p class="weekday-temp"><strong>45°</strong>|32°</p>
+            </div>
+
+
+            <div class="col-md-2">
+              <h5 class="weekday">Tuesday</h5>
+              <h5><i class="wi wi-showers"></i></h5>
+              <p class="weekday-temp"><strong>47°</strong>|38°</p>
+            </div>
+          </div>
+
+          <hr>
+          <br />
+
+
+
+
+        </div>
       </div>
     </div>
-    <script src="src/app.js"></script>
+    <footer>Last updated: <span id="date"></span></footer>
+    <small>
+      <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
+          class="fa-brands fa-github"></i></a>
+      by
+      Nickie Potter
+    </small>
+  </div>
+  </div>
+  <script src="src/app.js"></script>
 </body>
 
 </html>
