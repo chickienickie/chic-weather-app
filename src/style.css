@@ -131,19 +131,16 @@ p {
   text-transform: capitalize;
 }
 
-.temp-switch input {
-  font-size: 100px;
-}
-
 #city,
 h6 {
   color: rgb(14, 13, 13);
 }
 
-.forecast {
+.weather-forecast {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 2px;
+  text-align: center;
   flex-direction: row;
   max-width: 800px;
   margin: auto;
@@ -152,8 +149,17 @@ h6 {
   float: none;
 }
 
-.weekday-temp {
-  text-align: center;
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
 
 .row :hover {
