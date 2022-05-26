@@ -69,6 +69,8 @@ h5 {
 
 p {
   text-transform: capitalize;
+  text-align: justify;
+  opacity: 0.5;
 }
 
 #weather-icon-display {
@@ -98,8 +100,7 @@ p {
   text-transform: capitalize;
 }
 
-#city,
-h6 {
+#city {
   color: rgb(14, 13, 13);
 }
 

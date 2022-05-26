@@ -34,8 +34,7 @@
 
         <!-- Current Weather -->
         <h1 id="city"></h1>
-        <h2 id="temperature"></h2><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
-          <a href="#" id="fahrenheit-link">°F</a></span>
+        <h2 id="temperature">°F</h2>
         <p id="description"></p>
         <img src="" alt="Clear" id="icon" class="float-right" />
         <br />
@@ -46,22 +45,27 @@
 
         <div class="row" id="weather-condition">
           <div class="col-md-2 col-md-offset-1">
+            <p>Condition</p>
             <h6><i class="wi wi-cloud"></i></h6>
             <p id="description2">Sunny</p>
           </div>
           <div class="col-md-2">
+            <p>Humidity</p>
             <h6><i class="wi wi-humidity"></i></h6>
             <p id="humidity">10%</p>
           </div>
           <div class="col-md-2">
+            <p>Wind Speed</p>
             <h6><i class="wi wi-strong-wind"></i></h6>
             <p id="wind">windy 20 NE</p>
           </div>
           <div class="col-md-2">
+            <p>Real Feel</p>
             <h6><i class="wi wi-thermometer"></i></h6>
             <p id="feelslike">Real Feel</p>
           </div>
           <div class="col-md-2">
+            <p>Pressure</p>
             <h6><i class="wi wi-barometer"></i></h6>
             <p id="pressure">10%</p>
           </div>
@@ -78,14 +82,16 @@
         <br />
 
         <footer>Last updated: <span id="date"></span></footer>
-        <small>
-          <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
-              class="fa-brands fa-github"></i></a>
-          by Nickie Potter
-        </small>
+
       </div>
+      <small>
+        <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
+            class="fa-brands fa-github"></i></a>
+        by Nickie Potter
+      </small>
     </div>
   </div>
+
   <script src="src/app.js"></script>
 </body>
 
