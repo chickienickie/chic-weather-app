@@ -22,6 +22,7 @@
   <div class="container">
     <div class="weather-app-wrapper">
       <div class="weather-app">
+
         <!-- Search Bar -->
         <form id="search-form">
           <input type="search" placeholder=" Enter a city..." autocomplete=" off" id="city-input" />
@@ -30,6 +31,7 @@
               class="fa-solid fa-location-pin"></i>
           </button>
         </form>
+
         <!-- Current Weather -->
         <h1 id="city"></h1>
         <h2 id="temperature"></h2><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
@@ -37,6 +39,7 @@
         <p id="description"></p>
         <img src="" alt="Clear" id="icon" class="float-right" />
         <br />
+
         <!-- Current Weather Conditions -->
 
         <hr id="hr-bottom">
@@ -56,7 +59,7 @@
           </div>
           <div class="col-md-2">
             <h6><i class="wi wi-thermometer"></i></h6>
-            <p id="feelslike">feels like</p>
+            <p id="feelslike">Real Feel</p>
           </div>
           <div class="col-md-2">
             <h6><i class="wi wi-barometer"></i></h6>
@@ -64,83 +67,24 @@
           </div>
         </div>
 
-
         <hr>
         <!-- 5 day Forecast -->
+
         <h4>5 Day Forecast</h4>
-        <div class="weather-forecast">
-          <div class="row">
-
-            <div class="col-md-2 col-md-offset-1">
-              <h5 class="weather-forecast-date">Friday</h5>
-              <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> 18° |</span>
-                <span class="weather-forecast-temperature-min"> 12° </span>
-              </div>
-            </div>
+        <div class="weather-forecast" id="forecast"></div>
 
 
+        <hr>
+        <br />
 
-            <div class="col-md-2">
-              <h5 class="weather-forecast-date">Saturday</h5>
-              <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> 18° |</span>
-                <span class="weather-forecast-temperature-min"> 12° </span>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-2">
-              <h5 class="weather-forecast-date">Sunday</h5>
-              <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> 18° |</span>
-                <span class="weather-forecast-temperature-min"> 12° </span>
-              </div>
-            </div>
-
-
-
-            <div class="col-md-2">
-              <h5 class="weather-forecast-date">Monday</h5>
-              <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> 18° |</span>
-                <span class="weather-forecast-temperature-min"> 12° </span>
-              </div>
-            </div>
-
-
-            <div class="col-md-2">
-              <h5 class="weather-forecast-date">Tuesday</h5>
-              <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max"> 18° |</span>
-                <span class="weather-forecast-temperature-min"> 12° </span>
-              </div>
-            </div>
-          </div>
-
-          <hr>
-          <br />
-
-
-
-
-        </div>
+        <footer>Last updated: <span id="date"></span></footer>
+        <small>
+          <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
+              class="fa-brands fa-github"></i></a>
+          by Nickie Potter
+        </small>
       </div>
     </div>
-    <footer>Last updated: <span id="date"></span></footer>
-    <small>
-      <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
-          class="fa-brands fa-github"></i></a>
-      by
-      Nickie Potter
-    </small>
-  </div>
   </div>
   <script src="src/app.js"></script>
 </body>

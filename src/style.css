@@ -137,16 +137,9 @@ h6 {
 }
 
 .weather-forecast {
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 2px;
+  margin-top: 20px;
   text-align: center;
-  flex-direction: row;
-  max-width: 800px;
-  margin: auto;
-  display: block;
-  vertical-align: middle;
-  float: none;
+  color: #000;
 }
 
 .weather-forecast-date {
