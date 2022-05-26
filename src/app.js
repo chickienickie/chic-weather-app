@@ -82,6 +82,7 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let tempMax = document.querySelector("#high");
   let tempMin = document.querySelector("#low");
+  let feelsLike = document.querySelector("#feelslike");
   fahrenheitTemperature = response.data.main.temp;
   temperatureElement.innerHTML = ` ${Math.round(fahrenheitTemperature)}°F`;
   cityElement.innerHTML = response.data.name;
@@ -91,6 +92,7 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   tempMax.innerHTML = `${Math.round(response.data.main.temp_max)}°F`;
   tempMin.innerHTML = `${Math.round(response.data.main.temp_min)}°F`;
+  feelsLike.innerHTML = ` ${Math.round(response.data.main.feels_like)}°F`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
