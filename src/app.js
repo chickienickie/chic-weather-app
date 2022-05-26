@@ -80,18 +80,18 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  let feelsLike = document.querySelector("#feelslike");
-  let pressure = document.querySelector("#pressure");
+  let tempMax = document.querySelector("#high");
+  let tempMin = document.querySelector("#low");
   fahrenheitTemperature = response.data.main.temp;
   temperatureElement.innerHTML = ` ${Math.round(fahrenheitTemperature)}°F`;
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   description2Element.innerHTML = response.data.weather[0].main;
-  humidityElement.innerHTML = response.data.main.humidity;
+  humidityElement.innerHTML = `${response.data.main.humidity}%`;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  tempMax.innerHTML = `${Math.round(response.data.main.temp_max)}°F`;
+  tempMin.innerHTML = `${Math.round(response.data.main.temp_min)}°F`;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  feelsLike.innerHTML = ` ${Math.round(response.data.main.feels_like)}°F`;
-  pressure.innerHTML = response.data.main.pressure;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -130,4 +130,3 @@ form.addEventListener("submit", handleSubmit);
 
 
 search("New York");
-displayForecast();

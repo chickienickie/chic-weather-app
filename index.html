@@ -7,9 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900,300,500' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -41,33 +39,33 @@
 
         <!-- Current Weather Conditions -->
 
-        <hr id="hr-bottom">
+        <hr>
 
         <div class="row" id="weather-condition">
           <div class="col-md-2 col-md-offset-1">
-            <p>Condition</p>
+            <p>CONDITION</p>
             <h6><i class="wi wi-cloud"></i></h6>
             <p id="description2">Sunny</p>
           </div>
           <div class="col-md-2">
-            <p>Humidity</p>
+            <p>HIGH</p>
+            <h6><i class="wi wi-cloud-up"></i></h6>
+            <p id="high"></p>
+          </div>
+          <div class="col-md-2">
+            <p>HUMIDITY</p>
             <h6><i class="wi wi-humidity"></i></h6>
             <p id="humidity">10%</p>
           </div>
           <div class="col-md-2">
-            <p>Wind Speed</p>
+            <p>WIND SPEED</p>
             <h6><i class="wi wi-strong-wind"></i></h6>
             <p id="wind">windy 20 NE</p>
           </div>
           <div class="col-md-2">
-            <p>Real Feel</p>
-            <h6><i class="wi wi-thermometer"></i></h6>
-            <p id="feelslike">Real Feel</p>
-          </div>
-          <div class="col-md-2">
-            <p>Pressure</p>
-            <h6><i class="wi wi-barometer"></i></h6>
-            <p id="pressure">10%</p>
+            <p>LOW</p>
+            <h6><i class="wi wi-cloud-down"></i></h6>
+            <p id="low"></p>
           </div>
         </div>
 
@@ -84,6 +82,7 @@
         <footer>Last updated: <span id="date"></span></footer>
 
       </div>
+      <br />
       <small>
         <a href="https://github.com/chickienickie/boombox-weather-app">Open Source Code <i
             class="fa-brands fa-github"></i></a>

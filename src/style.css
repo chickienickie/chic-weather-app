@@ -37,13 +37,8 @@ h2 {
 hr {
   border-width: 1px 0;
   border-color: black;
-  border-color: #888485;
-  border-color: black;
-}
-
-hr#hr-bottom {
-  margin-top: 0px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -68,9 +63,12 @@ h5 {
 }
 
 p {
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: justify;
   opacity: 0.5;
+  font-weight: 100;
+  font-size: 18px;
+  letter-spacing: 1.5px;
 }
 
 #weather-icon-display {
@@ -83,6 +81,10 @@ p {
   vertical-align: middle;
   display: inline-block;
   margin-top: -100px;
+}
+
+#weather-condition {
+  margin-top: 20px;
 }
 
 #weather-condition h6 {
@@ -113,6 +115,8 @@ p {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .weather-forecast-temperature-min {
@@ -137,7 +141,8 @@ footer {
 button {
   border-radius: 50px;
   border: 1px solid #575756;
-  color: #f7cac9 a(0.8);
+  color: #020202;
+  background: #fcfbfb;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
@@ -147,14 +152,15 @@ button {
 }
 
 button:hover {
-  color: #faf8f8;
-  border-color: #70706e;
+  color: #fcfbfb;
+  background: #060606;
 }
 
 .search__input {
   border-radius: 50px;
   border: 1px solid #575756;
-  color: #f7cac9 a(0.8);
+  color: #060606;
+  background: #fcfbfb;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
@@ -162,10 +168,15 @@ button:hover {
   font-weight: 300;
 }
 
+.search__input:hover {
+  color: #fcfbfb;
+  background: #060606;
+}
 input {
   border-radius: 50px;
   border: 1px solid #575756;
-  color: #f7cac9 a(0.8);
+  color: #060606;
+  background: #fcfbfb;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
