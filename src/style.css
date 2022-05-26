@@ -83,39 +83,6 @@ p {
   margin-top: -100px;
 }
 
-#temperature h4 {
-  text-align: left;
-  font-size: 32px;
-  font-weight: 400;
-}
-
-#temperature p {
-  font-size: 300px;
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-bottom: 0;
-  text-align: left;
-  font-weight: 500;
-  line-height: 230px;
-}
-
-#temperature p sup {
-  vertical-align: baseline;
-  position: relative;
-  top: -185px;
-  line-height: 0;
-  font-size: 40px;
-  font-weight: 400;
-}
-
-#temperature h5 {
-  text-align: left;
-  font-size: 16px;
-  margin-bottom: 10px;
-  margin-top: 0;
-  font-weight: 300;
-}
-
 #weather-condition h6 {
   font-size: 36px;
   margin-bottom: 2px;
