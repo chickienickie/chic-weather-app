@@ -64,27 +64,16 @@ h5 {
 
 p {
   text-transform: uppercase;
-  text-align: justify;
   opacity: 0.5;
   font-weight: 100;
   font-size: 18px;
   letter-spacing: 1.5px;
 }
 
-#weather-icon-display {
-  height: 307px;
-  line-height: 307px;
-}
-
-#weather-icon {
-  font-size: 180px;
-  vertical-align: middle;
-  display: inline-block;
-  margin-top: -100px;
-}
-
 #weather-condition {
   margin-top: 20px;
+  text-align: center;
+  color: #000;
 }
 
 #weather-condition h6 {
