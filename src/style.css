@@ -183,12 +183,15 @@ a:link {
 
 @media (max-width: 900px) {
   h1,
-  h2 {
+  h2,
+  h3,
+  h4 {
     text-align: center;
     line-height: 0.6;
   }
 
-  h1 {
+  h1,
+  h4 {
     font-size: 45px;
   }
 
@@ -211,6 +214,10 @@ a:link {
     text-align: center;
   }
 
+  button {
+    float: none;
+  }
+
   footer,
   small {
     font-size: 15px;
@@ -219,5 +226,13 @@ a:link {
 
   .col-md-2 {
     flex: 0 0 auto;
+  }
+
+  .container {
+    border: none;
+  }
+
+  a {
+    text-align: center;
   }
 }
